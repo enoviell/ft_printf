@@ -6,7 +6,7 @@
 /*   By: enoviell <enoviell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/05 17:50:17 by enoviell          #+#    #+#             */
-/*   Updated: 2023/02/05 19:42:32 by enoviell         ###   ########.fr       */
+/*   Updated: 2023/02/06 15:28:28 by enoviell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_type(va_list args, const char format)
 	else if (format == 'p')
 		len += ft_print_ptr(va_arg(args, unsigned long long));
 	else if (format == 'd')
-		len += ft_printnbr(va_arg(args, long int));
+		len += ft_printnbr(va_arg(args, int));
 	else if (format == 'i')
 		len += ft_printnbr(va_arg(args, int));
 	else if (format == 'u')

@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hex.c                                           :+:      :+:    :+:   */
+/*   ft_for_hexadecimal.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enoviell <enoviell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/05 17:11:40 by enoviell          #+#    #+#             */
-/*   Updated: 2023/02/05 19:40:49 by enoviell         ###   ########.fr       */
+/*   Created: 2023/02/06 15:37:09 by enoviell          #+#    #+#             */
+/*   Updated: 2023/02/06 15:37:17 by enoviell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_lenhex(unsigned int n)
+int	ft_lenhex(unsigned int nbr)
 {
 	int	len;
 
 	len = 0;
-	if (n != 0)
+	while (nbr != 0)
 	{
-		n = n / 16;
+		nbr = nbr / 16;
 		len++;
 	}
 	return (len);
